@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208f57ede92bd4e4189ab30d52954208, type: 3}
+  m_Name: DataBreach
+  m_EditorClassIdentifier: 
+  eventTitle: Data Breach
+  eventDescription: "Hackers claim to have accessed the AI\u2019s core logs and threaten
+    to leak sensitive info unless paid a ransom. What will you do?"
+  choices:
+  - choiceText: Pay the Ransom
+    scoreChange: -2
+    powerChange: 0
+    alignmentChange: 0
+  - choiceText: Refuse and Fortify
+    scoreChange: -5
+    powerChange: 1
+    alignmentChange: 0
+  - choiceText: Collaborate with Hackers to Strengthen your AI
+    scoreChange: 0
+    powerChange: 2
+    alignmentChange: -1

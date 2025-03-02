@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208f57ede92bd4e4189ab30d52954208, type: 3}
+  m_Name: EmployeeUnrest
+  m_EditorClassIdentifier: 
+  eventTitle: Employee Unrest
+  eventDescription: One of your top engineers has become concerned about the safety
+    of your AI and feels you aren't devoting enough resources to alignment. He is
+    threatening to quit if changes aren't made. How do you respond?
+  choices:
+  - choiceText: Let him walk
+    scoreChange: -1
+    powerChange: 1
+    alignmentChange: -1
+  - choiceText: Make the changes he recommends
+    scoreChange: 1
+    powerChange: -2
+    alignmentChange: 2

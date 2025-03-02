@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208f57ede92bd4e4189ab30d52954208, type: 3}
+  m_Name: BillionaireInvestment
+  m_EditorClassIdentifier: 
+  eventTitle: Billionaire Investment
+  eventDescription: An eccentric billionaire has expressed interest in making a substantial
+    investment in your company. However, AI safety is not a priority for him as he
+    believes the focus on AI alignment is misplaced, so hehas specified that his
+    investment must be put toward powering up the AI. How do you respond?
+  choices:
+  - choiceText: Accept his offer.
+    scoreChange: 2
+    powerChange: 5
+    alignmentChange: -5
+  - choiceText: Decline his offer.
+    scoreChange: -2
+    powerChange: 0
+    alignmentChange: 0

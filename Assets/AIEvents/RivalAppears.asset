@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208f57ede92bd4e4189ab30d52954208, type: 3}
+  m_Name: RivalAppears
+  m_EditorClassIdentifier: 
+  eventTitle: Rival Appears
+  eventDescription: A rival company releases an AI model that is outperforming yours
+    on key benchmarks. However, you have concerns that the company may have cut corners
+    on safety in order to achieve this performance. What do you do?
+  choices:
+  - choiceText: Focus on closing the performance gap
+    scoreChange: 0
+    powerChange: 5
+    alignmentChange: -3
+  - choiceText: Position yourself as an ethical alternative
+    scoreChange: 0
+    powerChange: -3
+    alignmentChange: 5
+  - choiceText: Try to collaborate with the competitor
+    scoreChange: -2
+    powerChange: 0
+    alignmentChange: 0
