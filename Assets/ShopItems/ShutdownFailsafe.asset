@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b64f2be2d45568e91c4b210434c4, type: 3}
+  m_Name: ShutdownFailsafe
+  m_EditorClassIdentifier: 
+  itemName: Shtudown Failsafe
+  itemDescription: Guarantees success if you choose to shut down the AI.
+  itemPrice: 2

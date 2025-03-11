@@ -33,6 +33,10 @@ public class GameManager : MonoBehaviour
     public AudioClip singularityFailClip;
     public AIEventManager aiEventManager;
 
+    public GameObject shopPanel;
+    public TextMeshProUGUI shopButtonText;
+    bool shopOpen = false;
+
 
     private static GameManager instance;
     public static GameManager Instance
@@ -83,6 +87,22 @@ public class GameManager : MonoBehaviour
         enhanceAlignmentButton.interactable = true;
         shutdownButton.interactable = true;
         noActionButton.interactable = true;
+    }
+
+    public void HandleShopButton()
+    {
+        if (shopOpen) {
+            shopPanel.SetActive(false);
+            shopOpen = false;
+            ReactivateButtons();
+            shopButtonText.text = "Shop";
+        } else 
+        {
+            shopPanel.SetActive(true);
+            shopOpen = true;
+            DeactivateButtons();
+            shopButtonText.text = "Close Shop";
+        }
     }
 
     public void AttemptSingularity()
