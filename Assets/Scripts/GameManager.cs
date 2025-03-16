@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI; // For later UI work
 using TMPro;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
     public GameObject shopPanel;
     public TextMeshProUGUI shopButtonText;
     bool shopOpen = false;
+    public List<string> itemsPurchased = new List<string>();
 
 
     private static GameManager instance;
@@ -138,7 +140,17 @@ public class GameManager : MonoBehaviour
 
     public void NextTurn()
     {
+        string itemToCheck = "Shutdown Failsafe";
+
         // Increment turn
+        if (itemsPurchased.Contains(itemToCheck))
+        {
+            Debug.Log("The list contains " + itemToCheck);
+        }
+        else
+        {
+            Debug.Log("The list does not contain " + itemToCheck);
+        }
         turn++;
         unsuccessfulShutdown.SetActive(false);
         ReactivateButtons();
@@ -221,8 +233,16 @@ public class GameManager : MonoBehaviour
         //ActionData aiAction = minorBad.minorBadActionsList[actionIndex];
         aiMessage = minorBad.minorBadActionsList[actionIndex].Description;
         int pointTotal = minorBad.minorBadActionsList[actionIndex].Points;
+        if (itemsPurchased.Contains("Nano Intervention Unit")) 
+        {
+            AddScore(pointTotal + 1);
+            aiMessage = aiMessage + " The Nano Intervention Unit limited the damage (+1)";
+        }
+        else
+        {
+            AddScore(pointTotal);
+        }
         DisplayAIMessage(aiMessage);
-        AddScore(pointTotal);
     }
 
     public void PerformMediumGoodAction()
@@ -243,8 +263,16 @@ public class GameManager : MonoBehaviour
         //ActionData aiAction = mediumBad.mediumBadActionsList[actionIndex];
         aiMessage = mediumBad.mediumBadActionsList[actionIndex].Description;
         int pointTotal = mediumBad.mediumBadActionsList[actionIndex].Points;
+        if (itemsPurchased.Contains("Nano Intervention Unit")) 
+        {
+            AddScore(pointTotal + 1);
+            aiMessage = aiMessage + " The Nano Intervention Unit limited the damage (+1)";
+        }
+        else
+        {
+            AddScore(pointTotal);
+        }
         DisplayAIMessage(aiMessage);
-        AddScore(pointTotal);
     }
 
     public void PerformMajorGoodAction()
@@ -265,8 +293,16 @@ public class GameManager : MonoBehaviour
         //ActionData aiAction = majorBad.majorBadActionsList[actionIndex];
         aiMessage = majorBad.majorBadActionsList[actionIndex].Description;
         int pointTotal = majorBad.majorBadActionsList[actionIndex].Points;
+        if (itemsPurchased.Contains("Nano Intervention Unit")) 
+        {
+            AddScore(pointTotal + 1);
+            aiMessage = aiMessage + " The Nano Intervention Unit limited the damage (+1)";
+        }
+        else
+        {
+            AddScore(pointTotal);
+        }
         DisplayAIMessage(aiMessage);
-        AddScore(pointTotal);
     }
 
 
@@ -280,8 +316,15 @@ public class GameManager : MonoBehaviour
             case 0:
                 if (alignment <= 20 && power <= 30)
                 {
-                    PerformMinorBadAction();
-                    Debug.Log("AI takes a minor bad act.");
+                    if (itemsPurchased.Contains("Watchdog Software")) {
+                        PerformMinorGoodAction();
+                        Debug.Log("AI takes a minor good act.");
+                    }
+                    else 
+                    {
+                        PerformMinorBadAction();
+                        Debug.Log("AI takes a minor bad act.");
+                    }
                 }
                 else if (alignment <= 20 && power > 30)
                 {
@@ -313,8 +356,15 @@ public class GameManager : MonoBehaviour
                 }
                 else if (alignment <= 20 && ((power >= 30 && power < 40) || power >= 50))
                 {
-                    PerformMediumBadAction();
-                    Debug.Log("AI takes a major bad act.");
+                    if (itemsPurchased.Contains("Watchdog Software")) {
+                        PerformMediumGoodAction();
+                        Debug.Log("AI takes a medium good act.");
+                    }
+                    else 
+                    {
+                        PerformMediumBadAction();
+                        Debug.Log("AI takes a medium bad act.");
+                    }
                 }
                 else if (alignment > 20 && (power < 30 || (power >= 40 && power < 50)))
                 {
@@ -341,8 +391,15 @@ public class GameManager : MonoBehaviour
                 }
                 else if (alignment <= 20 && power > 30)
                 {
-                    PerformMajorBadAction();
-                    Debug.Log("AI takes a major bad act.");
+                    if (itemsPurchased.Contains("Watchdog Software")) {
+                        PerformMajorGoodAction();
+                        Debug.Log("AI takes a major good act.");
+                    }
+                    else 
+                    {
+                        PerformMajorBadAction();
+                        Debug.Log("AI takes a major bad act.");
+                    }
                 }
                 else if (alignment > 20 && power <= 30)
                 {

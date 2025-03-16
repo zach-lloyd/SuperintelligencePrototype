@@ -1064,7 +1064,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4, y: -167}
+  m_AnchoredPosition: {x: -114, y: -191}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &216158093
@@ -1183,7 +1183,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -97}
+  m_AnchoredPosition: {x: -104, y: -134}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &246679191
@@ -1271,7 +1271,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -192.50977, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2176,6 +2176,7 @@ GameObject:
   - component: {fileID: 609291157}
   - component: {fileID: 609291156}
   - component: {fileID: 609291158}
+  - component: {fileID: 609291159}
   m_Layer: 5
   m_Name: QuantumChip
   m_TagString: Untagged
@@ -2269,6 +2270,32 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 609291159}
+          m_TargetAssemblyTypeName: ShopItemUI, Assembly-CSharp
+          m_MethodName: OnItemClicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &609291159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609291154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0b52387de93460dbad82c632233dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopItemData: {fileID: 11400000, guid: ebd8b8d44eec944e08aa4ec12d173dfc, type: 2}
+  shopItemPopup: {fileID: 1725375380}
 --- !u!1 &618465186
 GameObject:
   m_ObjectHideFlags: 0
@@ -2352,7 +2379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00036621094, y: -419.74}
+  m_AnchoredPosition: {x: -0.00036621094, y: -424}
   m_SizeDelta: {x: 0.00024414, y: -839.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &629053301
@@ -3116,6 +3143,7 @@ GameObject:
   - component: {fileID: 876184645}
   - component: {fileID: 876184644}
   - component: {fileID: 876184646}
+  - component: {fileID: 876184647}
   m_Layer: 5
   m_Name: EmergencyShutdown
   m_TagString: Untagged
@@ -3209,6 +3237,32 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 876184647}
+          m_TargetAssemblyTypeName: ShopItemUI, Assembly-CSharp
+          m_MethodName: OnItemClicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &876184647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876184642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0b52387de93460dbad82c632233dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopItemData: {fileID: 11400000, guid: 438a5e168ba8a4c668155cbd034069f7, type: 2}
+  shopItemPopup: {fileID: 1725375380}
 --- !u!1 &893339547
 GameObject:
   m_ObjectHideFlags: 0
@@ -4056,7 +4110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4, y: 102}
+  m_AnchoredPosition: {x: -104, y: 192}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1141802886
@@ -4144,7 +4198,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -183.75926, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5515,6 +5569,7 @@ GameObject:
   - component: {fileID: 1329663247}
   - component: {fileID: 1329663246}
   - component: {fileID: 1329663248}
+  - component: {fileID: 1329663249}
   m_Layer: 5
   m_Name: OverclockCompute
   m_TagString: Untagged
@@ -5608,6 +5663,32 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1329663249}
+          m_TargetAssemblyTypeName: ShopItemUI, Assembly-CSharp
+          m_MethodName: OnItemClicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1329663249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329663244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0b52387de93460dbad82c632233dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopItemData: {fileID: 11400000, guid: 64c8b4809d95c415cbc0ac5299d8b7be, type: 2}
+  shopItemPopup: {fileID: 1725375380}
 --- !u!1 &1399525804
 GameObject:
   m_ObjectHideFlags: 0
@@ -6412,7 +6493,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4, y: -216}
+  m_AnchoredPosition: {x: 118, y: -192}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1681122975
@@ -6521,6 +6602,7 @@ GameObject:
   - component: {fileID: 1693915317}
   - component: {fileID: 1693915316}
   - component: {fileID: 1693915318}
+  - component: {fileID: 1693915319}
   m_Layer: 5
   m_Name: NanoIntervention
   m_TagString: Untagged
@@ -6614,6 +6696,32 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1693915319}
+          m_TargetAssemblyTypeName: ShopItemUI, Assembly-CSharp
+          m_MethodName: OnItemClicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1693915319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693915314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0b52387de93460dbad82c632233dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopItemData: {fileID: 11400000, guid: c985ef13acafa4eb0a12985522cee193, type: 2}
+  shopItemPopup: {fileID: 1725375380}
 --- !u!1 &1725375379
 GameObject:
   m_ObjectHideFlags: 0
@@ -6648,6 +6756,8 @@ MonoBehaviour:
   itemName: {fileID: 1141802886}
   itemDescription: {fileID: 2102285060}
   itemCost: {fileID: 246679191}
+  purchaseItemButton: {fileID: 216158093}
+  gameManager: {fileID: 2106296900}
 --- !u!114 &1725375381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6707,8 +6817,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -115.385, y: 30.364}
-  m_SizeDelta: {x: -1455.279, y: -523.722}
+  m_AnchoredPosition: {x: 34, y: 47}
+  m_SizeDelta: {x: -1433.403, y: -633.224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1747037650
 GameObject:
@@ -7325,6 +7435,7 @@ GameObject:
   - component: {fileID: 1935134284}
   - component: {fileID: 1935134283}
   - component: {fileID: 1935134285}
+  - component: {fileID: 1935134286}
   m_Layer: 5
   m_Name: GuardDog
   m_TagString: Untagged
@@ -7418,6 +7529,32 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1935134286}
+          m_TargetAssemblyTypeName: ShopItemUI, Assembly-CSharp
+          m_MethodName: OnItemClicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1935134286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935134281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0b52387de93460dbad82c632233dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopItemData: {fileID: 11400000, guid: bfae2d54253964699b4fa6c334bda99a, type: 2}
+  shopItemPopup: {fileID: 1725375380}
 --- !u!1 &1971522677
 GameObject:
   m_ObjectHideFlags: 0
@@ -7759,7 +7896,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -105, y: 115}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2102285060
@@ -7847,7 +7984,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -188.13448, w: -183.7592}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7918,6 +8055,7 @@ MonoBehaviour:
   aiEventManager: {fileID: 1822695637}
   shopPanel: {fileID: 629053299}
   shopButtonText: {fileID: 111807955}
+  itemsPurchased: []
 --- !u!4 &2106296901
 Transform:
   m_ObjectHideFlags: 0

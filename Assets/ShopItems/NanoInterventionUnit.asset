@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Nano Intervention Unit
   itemDescription: Uses nanotechnology to detect and intervene if the AI is being
     used for something negative, limiting the damage the AI can do.
-  itemPrice: 0
+  itemPrice: 3

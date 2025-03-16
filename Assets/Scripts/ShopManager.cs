@@ -13,7 +13,5 @@ public class ShopManager : MonoBehaviour
         }
         // Make sure the popup panel is active so it's visible
         itemPopup.gameObject.SetActive(true);
-
-        itemPopup.SetupPopup(itemData);
     }
 }
