@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 public class MinorBadActions : MonoBehaviour
 {
+    public GameManager gameManager;
+
     public class ActionData
     {
         public string Description { get; set; }

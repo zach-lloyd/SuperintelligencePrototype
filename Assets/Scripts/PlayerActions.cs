@@ -57,7 +57,8 @@ public class PlayerActions : MonoBehaviour
         // else, gameManager.NextTurn();
         int roll = Random.Range(0, 60);
 
-        if (roll <= gameManager.alignment)
+        if (roll <= gameManager.alignment || 
+            gameManager.itemsPurchased.Contains("Shutdown Failsafe"))
         {
             gameManager.aiActionText.text = "";
             MusicManager.instance.StopMusic();
