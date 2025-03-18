@@ -11,12 +11,13 @@ public class ShopItemPopup : MonoBehaviour
     public Button purchaseItemButton;
 
     public GameManager gameManager;
+    public InsufficientFundsPopup insufficientFundsPopup;
 
     public void SetupPopup(ShopItemData itemData, GameObject itemUI)
     {
         itemName.text = itemData.itemName;
         itemDescription.text = itemData.itemDescription;
-        itemCost.text = itemData.itemPrice.ToString();
+        itemCost.text = "Price: " + itemData.itemPrice.ToString() + " points";
         purchaseItemButton.onClick.RemoveAllListeners();
         purchaseItemButton.onClick.AddListener(OnButtonClicked);
 
@@ -27,27 +28,36 @@ public class ShopItemPopup : MonoBehaviour
 
     public void OnPurchased(ShopItemData itemData, GameObject itemUI)
     {
-        Debug.Log(itemData.itemPrice);
-        GameManager.Instance.SubtractScore(itemData.itemPrice);
-        GameManager.Instance.itemsPurchased.Add(itemData.itemName);
-
-        if (itemData.itemName == "Quantum Chip") 
+        if (itemData.itemPrice > gameManager.score) 
         {
-            gameManager.power += 5;
-            gameManager.alignment += 5;
-        } else if (itemData.itemName == "Compute Overclock")
-        {
-            gameManager.power += 10;
-            gameManager.alignment -= 3;
+            Debug.Log("Insufficient Funds!");
+            ClosePopup();
+            insufficientFundsPopup.gameObject.SetActive(true);
         }
-
-        if (itemUI != null)
+        else
         {
-            itemUI.SetActive(false);
-        }
+            Debug.Log(itemData.itemPrice);
+            GameManager.Instance.SubtractScore(itemData.itemPrice);
+            GameManager.Instance.itemsPurchased.Add(itemData.itemName);
 
-        // Hide or destroy the popup
-        ClosePopup();
+            if (itemData.itemName == "Quantum Chip") 
+            {
+                gameManager.power += 5;
+                gameManager.alignment += 5;
+            } else if (itemData.itemName == "Compute Overclock")
+            {
+                gameManager.power += 10;
+                gameManager.alignment -= 3;
+            }
+
+            if (itemUI != null)
+            {
+                itemUI.SetActive(false);
+            }
+
+            // Hide or destroy the popup
+            ClosePopup();
+        }
     }
 
     public void ClosePopup()

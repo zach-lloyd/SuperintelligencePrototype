@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc90dc43150f4ccbac0a97ad7180261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1 &22658284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,7 +1569,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 16.30597, y: 23.143005}
+  m_AnchoredPosition: {x: 16.305908, y: 23.143005}
   m_SizeDelta: {x: -292.093, y: -573.599}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593422912
@@ -5513,18 +5514,22 @@ MonoBehaviour:
     you may want to spend some of your time enhancing its alignment.
 
 
-    6. After
-    each turn, you will be informed of something good (or bad) that the AI did and
-    scored accordingly.
+    6. You
+    can go to the shop and purchase items to improve your AI, but doing so will cost
+    you points.
 
 
-    7. If things get too bad, you can try to shut the AI
-    down and end the game.
+    7. After each turn, you will be informed of something good
+    (or bad) that the AI did and scored accordingly.
 
 
-    8. But if you make it to the end and your AI is
-    sufficiently powerful, you will have the chance to power it up one final time
-    to try to trigger a utopian singularity. '
+    8. If things get too bad,
+    you can try to shut the AI down and end the game.
+
+
+    9. But if you make it
+    to the end and your AI is sufficiently powerful, you will have the chance to
+    power it up one final time to try to trigger a utopian singularity. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 395bc776b9ea14535bf3bedeb79214a0, type: 2}
   m_sharedMaterial: {fileID: -2550887445582659405, guid: 395bc776b9ea14535bf3bedeb79214a0, type: 2}
@@ -5551,7 +5556,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.5
+  m_fontSize: 27.15
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6103,6 +6108,9 @@ MonoBehaviour:
   singularitySuccessClip: {fileID: 8300000, guid: 930c9983edad542689892e2052ef8ab0, type: 3}
   singularityFailClip: {fileID: 8300000, guid: 302fb2ebc6ab24139b5e110ff9616a9b, type: 3}
   aiEventManager: {fileID: 1822695637}
+  shopPanel: {fileID: 0}
+  shopButtonText: {fileID: 0}
+  itemsPurchased: []
 --- !u!4 &2106296901
 Transform:
   m_ObjectHideFlags: 0
