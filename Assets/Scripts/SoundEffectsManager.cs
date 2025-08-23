@@ -12,6 +12,8 @@ public class SoundEffectsManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        // Similar to the music manager, make sure only one sound effects manager 
+        // gets created.
         else
         {
             Destroy(gameObject);
@@ -25,7 +27,8 @@ public class SoundEffectsManager : MonoBehaviour
     {
         if (clip != null)
         {
-            // PlayOneShot won't interrupt a currently playing sound on this AudioSource
+            // PlayOneShot won't interrupt a currently playing sound on this 
+            // AudioSource.
             audioSource.PlayOneShot(clip);
         }
     }

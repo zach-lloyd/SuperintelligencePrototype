@@ -6,12 +6,13 @@ public class ShopManager : MonoBehaviour
 
     public void HandleItemClick(ShopItemData itemData)
     {
+        // Debug/handle error where item data was not successfully passed.
         if (itemData == null)
         {
             Debug.LogWarning("No shop item data provided to HandleItemClick.");
             return;
         }
-        // Make sure the popup panel is active so it's visible
+        
         itemPopup.gameObject.SetActive(true);
     }
 }

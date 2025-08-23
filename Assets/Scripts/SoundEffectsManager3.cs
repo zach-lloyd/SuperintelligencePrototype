@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// I ultimately ended up having to create separate sound effects managers for 
+// each scene to avoid errors, which is why there are 3 of them.
 public class SoundEffectsManager3 : MonoBehaviour
 {
     public static SoundEffectsManager3 instance;
@@ -7,7 +9,7 @@ public class SoundEffectsManager3 : MonoBehaviour
 
     void Awake()
     {
-        if (instance == null) 
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -17,7 +19,7 @@ public class SoundEffectsManager3 : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        
+
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -25,7 +27,8 @@ public class SoundEffectsManager3 : MonoBehaviour
     {
         if (clip != null)
         {
-            // PlayOneShot won't interrupt a currently playing sound on this AudioSource
+            // PlayOneShot won't interrupt a currently playing sound on this 
+            // AudioSource.
             audioSource.PlayOneShot(clip);
         }
     }

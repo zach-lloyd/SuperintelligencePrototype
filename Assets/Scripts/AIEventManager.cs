@@ -17,10 +17,7 @@ public class AIEventManager : MonoBehaviour
         availableEvents = new List<AIEventData>(allEvents);
     }
 
-    /// <summary>
-    /// Returns a random event from the allEvents array.
-    /// If none are available, returns null.
-    /// </summary>
+    // Returns a random event from the allEvents array if any events are available.
     public AIEventData GetRandomEvent()
     {
         if (availableEvents == null || availableEvents.Count == 0)
@@ -28,16 +25,13 @@ public class AIEventManager : MonoBehaviour
 
         int index = Random.Range(0, availableEvents.Count);
         AIEventData chosenEvent = availableEvents[index];
-        // Remove the event so it can't occur more than once in a single game
+        // Remove the event so it can't occur more than once in a single game.
         availableEvents.RemoveAt(index);
 
         return chosenEvent;
     }
 
-    /// <summary>
-    /// Call this to display a specific AIEventData on the popup panel.
-    /// For example: TriggerEvent(GetRandomEvent());
-    /// </summary>
+    // Call this to display a specific AI Event on the popup panel.
     public void TriggerEvent(AIEventData eventData)
     {
         if (eventData == null)
@@ -46,10 +40,10 @@ public class AIEventManager : MonoBehaviour
             return;
         }
 
-        // Make sure the popup panel is active so it's visible
+        // Make sure the popup panel is active so it's visible.
         eventPopup.gameObject.SetActive(true);
 
-        // Pass the event data to the popup so it can fill in UI
+        // Pass the event data to the popup so it can fill in UI.
         eventPopup.SetupPopup(eventData);
     }
 }

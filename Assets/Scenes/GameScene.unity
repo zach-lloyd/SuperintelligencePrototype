@@ -1042,6 +1042,7 @@ GameObject:
   - component: {fileID: 216158095}
   - component: {fileID: 216158094}
   - component: {fileID: 216158093}
+  - component: {fileID: 216158096}
   m_Layer: 5
   m_Name: PurchaseItemButton
   m_TagString: Untagged
@@ -1151,6 +1152,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216158091}
   m_CullTransparentMesh: 1
+--- !u!114 &216158096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216158091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.15294118}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &246679189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,8 +1233,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2420,6 +2436,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1214668316}
+          m_TargetAssemblyTypeName: SoundEffectsManager3, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 6bf0a73b38d9048e9b7c7c8ea729a49a, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &609291159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3387,6 +3415,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1214668316}
+          m_TargetAssemblyTypeName: SoundEffectsManager3, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 6bf0a73b38d9048e9b7c7c8ea729a49a, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &876184647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4309,6 +4349,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1214668316}
+        m_TargetAssemblyTypeName: SoundEffectsManager3, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 28d888052d0a741e5983668766424ec1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1048271651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4413,8 +4465,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5946,6 +5998,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1214668316}
+          m_TargetAssemblyTypeName: SoundEffectsManager3, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 6bf0a73b38d9048e9b7c7c8ea729a49a, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1329663249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6095,6 +6159,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1214668316}
+        m_TargetAssemblyTypeName: SoundEffectsManager3, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 917ce452bf7254b79981a4c94f3a5e82, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6740,6 +6816,7 @@ GameObject:
   - component: {fileID: 1681122977}
   - component: {fileID: 1681122976}
   - component: {fileID: 1681122975}
+  - component: {fileID: 1681122978}
   m_Layer: 5
   m_Name: CloseShopPopupButton
   m_TagString: Untagged
@@ -6823,6 +6900,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1214668316}
+        m_TargetAssemblyTypeName: SoundEffectsManager3, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 28d888052d0a741e5983668766424ec1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1681122976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6861,6 +6950,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681122973}
   m_CullTransparentMesh: 1
+--- !u!114 &1681122978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681122973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.15294118}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1693915314
 GameObject:
   m_ObjectHideFlags: 0
@@ -6979,6 +7083,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1214668316}
+          m_TargetAssemblyTypeName: SoundEffectsManager3, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 6bf0a73b38d9048e9b7c7c8ea729a49a, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1693915319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7005,6 +7121,7 @@ GameObject:
   - component: {fileID: 1725375382}
   - component: {fileID: 1725375381}
   - component: {fileID: 1725375380}
+  - component: {fileID: 1725375384}
   m_Layer: 5
   m_Name: ShopItemPopup
   m_TagString: Untagged
@@ -7030,6 +7147,8 @@ MonoBehaviour:
   purchaseItemButton: {fileID: 216158093}
   gameManager: {fileID: 2106296900}
   insufficientFundsPopup: {fileID: 2018435604}
+  purchaseSuccessClip: {fileID: 8300000, guid: 53736191c9d4640b4851ab2535faa439, type: 3}
+  purchaseFailClip: {fileID: 8300000, guid: ed3b622c996994a8daf6a67d6bf8f0fb, type: 3}
 --- !u!114 &1725375381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7092,6 +7211,21 @@ RectTransform:
   m_AnchoredPosition: {x: 34, y: 47}
   m_SizeDelta: {x: -1433.403, y: -633.224}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1725375384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725375379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 0
 --- !u!1 &1747037650
 GameObject:
   m_ObjectHideFlags: 0
@@ -7949,6 +8083,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1214668316}
+          m_TargetAssemblyTypeName: SoundEffectsManager3, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 6bf0a73b38d9048e9b7c7c8ea729a49a, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1935134286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8193,6 +8339,8 @@ MonoBehaviour:
   purchaseItemButton: {fileID: 0}
   gameManager: {fileID: 2106296900}
   insufficientFundsPopup: {fileID: 0}
+  purchaseSuccessClip: {fileID: 0}
+  purchaseFailClip: {fileID: 0}
 --- !u!114 &2018435602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8445,8 +8593,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8573,6 +8721,8 @@ MonoBehaviour:
   shopPanel: {fileID: 629053299}
   shopButtonText: {fileID: 111807955}
   itemsPurchased: []
+  shopItemPopup: {fileID: 1725375380}
+  insufficientFundsPopup: {fileID: 2018435604}
 --- !u!4 &2106296901
 Transform:
   m_ObjectHideFlags: 0

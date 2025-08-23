@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 public class MajorBadActions : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public class ActionData
     {
         public string Description { get; set; }

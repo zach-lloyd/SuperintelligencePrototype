@@ -2,6 +2,8 @@ using UnityEngine;
 using TMPro; 
 using UnityEngine.UI;
 
+// Creates the popup window to display an in-game event and the various choices 
+// the player can make.
 public class AIEventPopup : MonoBehaviour
 {
     [Header("UI Elements")]
@@ -11,23 +13,22 @@ public class AIEventPopup : MonoBehaviour
     public Button choiceButton2;
     public Button choiceButton3;
 
-    // A method to populate the UI
+    // A method to populate the UI.
     public void SetupPopup(AIEventData eventData)
     {
         descriptionText.text = eventData.eventDescription;
 
-        // For each choice, set the button text and onClick logic
+        // For each choice, set the button text and onClick logic.
         if (eventData.choices.Length > 0)
         {
             choiceButton1.gameObject.SetActive(true);
-            // Suppose you have a child text element or a TextMeshProUGUI on the button
             TextMeshProUGUI btnText = choiceButton1.GetComponentInChildren<TextMeshProUGUI>();
             btnText.text = eventData.choices[0].choiceText;
 
-            // Clear old listeners
+            // Clear old listeners.
             choiceButton1.onClick.RemoveAllListeners();
-            // Add a new listener to handle outcome
-            int index = 0; // index of choice
+            // Add a new listener to handle outcome.
+            int index = 0; // index of choice.
             choiceButton1.onClick.AddListener(() => OnChoiceSelected(eventData, index));
         }
         else
@@ -35,6 +36,8 @@ public class AIEventPopup : MonoBehaviour
             choiceButton1.gameObject.SetActive(false);
         }
 
+        // In practice this conditional should always be true because all events
+        // should have at least two alternative actions for the user to choose from.
         if (eventData.choices.Length > 1)
         {
             choiceButton2.gameObject.SetActive(true);
@@ -50,6 +53,9 @@ public class AIEventPopup : MonoBehaviour
             choiceButton2.gameObject.SetActive(false);
         }
 
+        // No events currently have more than three choices. However, if I add 
+        // additional events that have more, I'll need to add additional branches
+        // or come up with a more concise way to handle.
         if (eventData.choices.Length > 2)
         {
             choiceButton3.gameObject.SetActive(true);
@@ -66,7 +72,8 @@ public class AIEventPopup : MonoBehaviour
         }
     }
 
-    // Called when a choice is clicked
+    // Called when a choice is clicked. Applies the changes to score, power, 
+    // and alignment that are caused by selecting that choice.
     private void OnChoiceSelected(AIEventData eventData, int choiceIndex)
     {
         AIEventChoice choice = eventData.choices[choiceIndex];
@@ -75,14 +82,11 @@ public class AIEventPopup : MonoBehaviour
         GameManager.Instance.alignment += choice.alignmentChange;
         GameManager.Instance.NextTurn();
 
-        // Hide or destroy the popup
         ClosePopup();
     }
 
     public void ClosePopup()
     {
-        // e.g., gameObject.SetActive(false);
-        // or Destroy(gameObject) if it's instantiated dynamically
         gameObject.SetActive(false);
     }
 }

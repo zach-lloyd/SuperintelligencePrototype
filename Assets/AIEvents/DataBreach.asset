@@ -25,6 +25,6 @@ MonoBehaviour:
     powerChange: 1
     alignmentChange: 0
   - choiceText: Collaborate with Hackers to Strengthen your AI
-    scoreChange: 0
+    scoreChange: -1
     powerChange: 2
     alignmentChange: -1

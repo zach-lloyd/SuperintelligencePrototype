@@ -5,12 +5,11 @@ public class ShopItemUI : MonoBehaviour
     public ShopItemData shopItemData;   
     public ShopItemPopup shopItemPopup;
 
+    // Function that handles when a player clicks on an item in the store. Opens
+    // the item popup and populates it with the information of the clicked item.
     public void OnItemClicked()
     {
-        // Activate the purchase panel.
         shopItemPopup.gameObject.SetActive(true);
-
-        // Pass both the data and this UI element's GameObject to the popup.
         shopItemPopup.SetupPopup(shopItemData, this.gameObject);
     }
 }
