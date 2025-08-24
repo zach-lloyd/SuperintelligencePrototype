@@ -3,10 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the 
-    // MonoBehaviour is created.
+    // This function is attached to the Begin button on the instruction screen
+    // so that the main game screen can be loaded when that button is clicked.
     public void StartNewGame()
     {
         SceneManager.LoadScene("GameScene");
     }
 }
+
