@@ -4,7 +4,7 @@ each turn, the player makes a choice and watches how that choice affects the AI'
 the AI by balancing its power and alignment while responding to its unpredictable actions. The goal is to use the game to convey the challenges, tradeoffs,
 risks, and possibilities inherent in artificial intelligence development.
 
-Available for playtesting at: https://jzl3.itch.io/superintelligence-prototype
+**Available for playtesting at:** https://jzl3.itch.io/superintelligence-prototype
 
 ## Gameplay
 - The game spans up to 50 turns. Designed to be played in about ~5 minutes.
